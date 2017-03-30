@@ -1,0 +1,23 @@
+{
+  "name": "angular-imooc",
+  "homepage": "https://github.com/alex-marmot/angular-imooc",
+  "authors": [
+    "alex <alex.marmot@gmail.com>"
+  ],
+  "description": "angluar learning",
+  "main": "",
+  "keywords": [
+    "angularjs"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.6.3"
+  }
+}
