@@ -11,8 +11,8 @@ var app = {
 
 gulp.task('lib', function() {
   gulp.src('bower_components/**/*.js')
-  .pipe(gulp.dest(app.devPath + 'vendeor'))
-  .pipe(gulp.dest(app.prdPath + 'vendeor'))
+  .pipe(gulp.dest(app.devPath + 'vendor'))
+  .pipe(gulp.dest(app.prdPath + 'vendor'))
   .pipe($.connect.reload())
 });
 
@@ -33,9 +33,9 @@ gulp.task('json', function() {
 gulp.task('less', function() {
   gulp.src(app.srcPath + 'style/index.less')
   .pipe($.less())
-  .pipe(gulp.dest(app.devPath + 'style'))
+  .pipe(gulp.dest(app.devPath + 'css'))
   .pipe($.cssmin())
-  .pipe(gulp.dest(app.prdPath + 'style'))
+  .pipe(gulp.dest(app.prdPath + 'css'))
   .pipe($.connect.reload())
 });
 
